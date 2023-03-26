@@ -18,8 +18,7 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
-////////////////////////
-
+/////////////////////////// NAVBAR İÇİN
 const sectionHeroEl = document.querySelector(".nav-background-image-div");
 const navbarSticky = document.querySelector(".nav-navbar");
 const linkColor = document.querySelectorAll(".color-for-nav-links");
@@ -49,3 +48,8 @@ const obs = new IntersectionObserver(
   }
 );
 obs.observe(sectionHeroEl);
+/////////////////////////////////////////////////
+
+const urunler = document.querySelector(".urunler-link");
+
+urunler.addEventListener("mouseenter", () => {});
