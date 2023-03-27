@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,7 +22,51 @@
   <body>
     <button class="body-sticky-right-bottom">
       <ion-icon name="chatbox-outline"></ion-icon>
+      <ion-icon class="display-none" name="close-outline"></ion-icon>
     </button>
+
+    <div class="body-sticky-div display-none">
+      <div class="heading-sticky">
+        <p>İletişim</p>
+        <p>
+          <button>
+            <ion-icon
+              class="iletisim-kapatma-iconu"
+              name="chevron-down-outline"
+            ></ion-icon>
+          </button>
+        </p>
+      </div>
+      <div class="info-sticky">
+        <p class="bilgiler-ulasim">
+          Aşağıdaki iletişim adreslerimizden bize ulaşabilirsiniz.
+        </p>
+        <div class="iletisim-sticky">
+          <div class="sticky-wp">
+            <p class="iletisim-sticky-wp-insta-mail">Whatsapp:</p>
+            <p>
+              <span><ion-icon name="logo-whatsapp"></ion-icon></span
+              ><a href="https://wa.me/+905396141176">+905396141176</a>
+            </p>
+          </div>
+          <div class="sticky-instagram">
+            <p class="iletisim-sticky-wp-insta-mail">İnstagram:</p>
+            <p>
+              <span><ion-icon name="logo-instagram"></ion-icon></span
+              ><a href="https://www.instagram.com/akif.tuncc/">@akif.tuncc</a>
+            </p>
+          </div>
+          <div class="sticky-e-mail">
+            <p class="iletisim-sticky-wp-insta-mail">E-mail:</p>
+            <p>
+              <span><ion-icon name="mail-open-outline"></ion-icon></span
+              ><a href="mailto:akiftuncc@outlook.com">akiftuncc@outlook.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <nav class="nav-navbar">
       <!-- sticky-navbar buraya gelecek-->
       <div class="navbar container">
@@ -26,10 +75,24 @@
         </div>
         <div class="nav-right">
           <ul>
-            <li>
-              <a class="color-for-nav-links urunler-link" href="#"
-                ><h4>Ürünler</h4>
-              </a>
+            <li class="">
+              <div class="urunler-relative">
+                <h4>
+                  <a href="#" class="color-for-nav-links urunler-link"
+                    >Ürünler</a
+                  >
+                </h4>
+                <div class="urunler-clicked display-none">
+                  <div>
+                    <ul>
+                      <li>Kolye</li>
+                      <li>Küpe</li>
+                      <li>Yüzük</li>
+                      <li>Bileklik</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
             </li>
             <li>
               <a class="color-for-nav-links" href="#"><h4>Özel Sipariş</h4> </a>
@@ -185,6 +248,7 @@
               </div>
               <div class="top-seller-price">
                 <p><strong>50₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>
@@ -207,6 +271,7 @@
               </div>
               <div class="top-seller-price">
                 <p><strong>60₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>
@@ -229,6 +294,7 @@
               </div>
               <div class="top-seller-price">
                 <p><strong>100₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>
@@ -251,6 +317,7 @@
               </div>
               <div class="top-seller-price">
                 <p><strong>70₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>
@@ -273,6 +340,7 @@
               </div>
               <div class="top-seller-price">
                 <p><strong>50₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>
@@ -289,12 +357,12 @@
               </div>
               <div class="top-seller-text">
                 <p>
-                  Zümrütlerimizin hepsi sahtedir. Zaten bu fiyata gerçek zümrüt
-                  yok.
+                  Zümrütlerimizin hepsi sahtedir. Bu fiyata gerçek zümrüt yok.
                 </p>
               </div>
               <div class="top-seller-price">
                 <p><strong>120₺</strong></p>
+                <i class="fa-solid fa-cart-plus"></i>
               </div>
             </div>
           </div>

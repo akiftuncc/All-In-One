@@ -334,6 +334,11 @@ nav ul {
   width: 30rem;
   height: 55rem;
   box-shadow: 0px 20px 30px 1px rgba(0, 0, 0, 0.11);
+  transition: all 0.3s;
+}
+
+.top-seller-products:hover {
+  transform: scale(1.005);
 }
 
 .for-center {
@@ -353,9 +358,24 @@ nav ul {
 
 .top-seller-price p {
   position: absolute;
-  bottom: 2rem;
+  bottom: 4rem;
+  left: 4rem;
   font-size: 3rem;
   color: #187729;
+}
+
+.top-seller-price i {
+  font-size: 4rem;
+  color: #1f9735;
+  bottom: 4rem;
+  right: 4rem;
+  position: absolute;
+  transition: 0.3s all;
+}
+
+.top-seller-price i:hover {
+  color: #1fc43d;
+  cursor: pointer;
 }
 
 /* ******************************************* */
@@ -394,7 +414,7 @@ nav ul {
   width: 80%;
 }
 /* **************************************************** */
-
+/* chat icon */
 .body-sticky-right-bottom {
   position: fixed;
   padding: 1rem;
@@ -419,4 +439,125 @@ nav ul {
   width: 4rem;
   height: 4rem;
   color: #fff;
+}
+
+.display-none {
+  display: none;
+  visibility: hidden;
+}
+/* chat panel */
+
+.body-sticky-div {
+  width: 32rem;
+  height: 32rem;
+  position: fixed;
+  bottom: 10rem;
+  right: 6rem;
+  background-color: #fff;
+  border-radius: 1rem;
+  z-index: 999;
+  box-shadow: 0rem 0.2rem 0.9rem rgba(0, 0, 0, 0.3);
+}
+.heading-sticky {
+  justify-self: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: #4e8cff;
+  color: #fff;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.heading-sticky ion-icon {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: #fff;
+  transition: all 0.3s;
+}
+.heading-sticky ion-icon:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.heading-sticky button {
+  background: none;
+  border: none;
+}
+
+.heading-sticky p {
+  padding: 1rem 2rem;
+  font-size: 2rem;
+}
+
+.info-sticky {
+  padding: 2rem 3rem;
+}
+
+.info-sticky p {
+  font-size: 1.6rem;
+  color: #666;
+}
+
+.bilgiler-ulasim {
+  margin-bottom: 1rem;
+}
+
+.iletisim-sticky-wp-insta-mail {
+  margin-top: 3rem;
+}
+
+.iletisim-sticky ion-icon {
+  color: #4e8cff;
+  width: 2rem;
+  height: 2rem;
+  position: absolute;
+}
+
+.iletisim-sticky a {
+  position: absolute;
+  left: 2.4rem;
+  color: #555;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.iletisim-sticky a:hover {
+  color: #111;
+  text-decoration: underline;
+}
+
+.sticky-wp,
+.sticky-instagram,
+.sticky-e-mail {
+  position: relative;
+}
+
+/* URUNLER CLICKED **************************************** */
+.urunler-relative {
+}
+.urunler-clicked {
+  position: absolute;
+  z-index: 999;
+  transition: 0.6s all;
+  box-shadow: 0rem 0.1rem 0.3rem rgba(0, 0, 0, 0.3);
+  margin-top: 0rem;
+  margin-left: -0.8rem;
+  font-size: 2rem;
+  color: #222;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.94),
+    rgba(255, 255, 255, 0.96)
+  );
+  padding: 1rem 2rem;
+  border-radius: 0.4rem 0.4rem 0.8rem 0.8rem;
+}
+.urunler-clicked ul {
+  display: block;
+}
+
+.urunler-clicked li {
+  font-weight: 500;
+  margin-top: 1rem;
+}
+.urunler-clicked li:last-child {
+  margin-bottom: 1rem;
 }
