@@ -65,6 +65,7 @@ html {
 }
 
 body {
+  position: relative;
   font-family: "Rubik", sans-serif;
   color: #032209;
 }
@@ -108,7 +109,7 @@ ul {
 }
 
 .container-new {
-  width: 110rem;
+  width: 128rem;
   margin: auto;
 }
 
@@ -289,7 +290,7 @@ nav ul {
 }
 /*****************************************************/
 .top-seller-section {
-  max-width: 110rem;
+  max-width: 128rem;
   margin: auto;
 }
 .top-seller-heading {
@@ -301,13 +302,14 @@ nav ul {
 
 .top-seller-heading-product {
   margin-bottom: 1rem;
-  margin-top: 1rem;
+  margin-top: 3.6rem;
 }
 
 .top-seller-text {
+  margin-top: 1rem;
   margin-bottom: 2rem;
   font-size: 1.4rem;
-  letter-spacing: 0.1px;
+  letter-spacing: 0.2px;
   line-height: 2rem;
 }
 
@@ -315,21 +317,27 @@ nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem;
+  justify-content: center; /* center horizontally */
+  align-items: center; /* center vertically */
 }
-.top-seller-image {
-  position: absolute;
-  bottom: -0.5rem;
-  text-align: center;
+.for-padding-top-seller {
+  padding: 1rem 4rem;
 }
 
 .top-seller-products {
+  position: relative;
+  padding-left: rem;
   margin-top: 3rem;
   margin-bottom: 3rem;
   border-radius: 1rem;
   /* background-color: #8ce99a; */
-  position: relative;
-  width: 28rem;
-  height: 38rem;
+  width: 30rem;
+  height: 55rem;
+  box-shadow: 0px 20px 30px 1px rgba(0, 0, 0, 0.11);
+}
+
+.for-center {
+  justify-self: center;
 }
 
 .top-seller-image {
@@ -337,19 +345,26 @@ nav ul {
 }
 
 .top-seller-image img {
-  text-align: center;
-  width: 25rem;
+  max-width: 100%;
   height: auto;
-  border-radius: 1rem;
+  text-align: center;
+  border-radius: 1rem 1rem 0 0;
+}
+
+.top-seller-price p {
+  position: absolute;
+  bottom: 2rem;
+  font-size: 3rem;
+  color: #187729;
 }
 
 /* ******************************************* */
 .section-trust {
   color: #fff;
-  width: 1180px;
+  width: 128rem;
   margin: auto;
   border-radius: 10px;
-  background-color: #2b8a3e;
+  background-color: #087f5b;
   margin-top: 8rem;
   align-items: center;
   display: grid;
@@ -375,6 +390,33 @@ nav ul {
   justify-content: right;
 }
 .trust-how img {
-  border-radius: 10px;
+  border-radius: 0 10px 10px 0;
   width: 80%;
+}
+/* **************************************************** */
+
+.body-sticky-right-bottom {
+  position: fixed;
+  padding: 1rem;
+  background-color: #fff;
+  bottom: 2rem;
+  right: 3rem;
+  border-radius: 50%;
+  background-color: #4e8cff;
+  z-index: 999;
+  transition: all 0.3s;
+  border: none;
+}
+
+.body-sticky-right-bottom:hover {
+  box-shadow: 0rem 0.3rem 1rem rgba(0, 0, 0, 0.4);
+  background-color: #3d74da;
+  cursor: pointer;
+}
+
+.body-sticky-right-bottom ion-icon {
+  /* font-size: 4rem; */
+  width: 4rem;
+  height: 4rem;
+  color: #fff;
 }
