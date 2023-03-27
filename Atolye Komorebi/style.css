@@ -561,3 +561,97 @@ nav ul {
 .urunler-clicked li:last-child {
   margin-bottom: 1rem;
 }
+
+.urunler-clicked-link {
+  color: #333;
+}
+.urunler-clicked-link a:hover {
+  color: #111 !important;
+}
+/* ********************************************** */
+
+.footer {
+  background-color: #fafafa;
+  padding-bottom: 7rem;
+}
+
+.footer-grid {
+  padding-top: 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-div {
+  justify-self: center;
+}
+
+.footer-grid-center-div {
+  justify-self: center;
+}
+
+.footer-heading h4 {
+  margin-bottom: 3rem;
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.footer-text a {
+  color: #777;
+  font-size: 1.6rem;
+}
+
+.footer-text p {
+  letter-spacing: 0.3px;
+  line-height: 3rem;
+}
+.footer-mail,
+.footer-insta {
+  margin-top: 2rem;
+}
+
+.footer-btn {
+  background: none;
+  border: none;
+}
+.footer-btn p {
+  color: #777;
+  font-size: 1.6rem;
+}
+
+.footer-btn ion-icon {
+  width: 4.2rem;
+  height: 4.2rem;
+}
+
+.footer-tel-icon {
+  color: #087f5b;
+}
+.footer-mail-icon {
+  color: #4e8cff;
+}
+.footer-insta-icon {
+  color: #d6336c;
+}
+
+.footer-text-support p {
+  line-height: 2rem;
+}
+
+.footer-btn:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.footer-btn-div {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-btn div p {
+  text-align: start;
+}
+
+.support-info-footer {
+  color: #222 !important;
+  font-weight: 600 !important;
+}
