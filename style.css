@@ -1,35 +1,72 @@
 .container {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  align-items: center;
-  font-size: 35px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-a {
-  text-decoration: none;
-  color: black;
+.heading {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.heading h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #333;
+}
+
+.projects-div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project-div {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 330px;
+  transition: all 0.3s ease-in-out;
+}
+
+.project-div:hover {
+  transform: translateY(-10px);
 }
 
 .x {
-  max-width: 1000px;
-  padding: 20px 70px;
-  background-color: red;
-  border-radius: 5px;
-  background-color: green;
-}
-
-body {
-  background-color: black;
-}
-
-a:hover {
-  background-color: rgb(116, 185, 36);
-  transition: 0.2s;
-}
-
-h1 {
-  margin: 0;
+  display: block;
+  padding: 20px;
+  background-color: #333;
   color: #fff;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.x:hover {
+  background-color: #666;
+}
+.project-div h2 {
+  font-size: 20px;
+}
+
+.text {
+  padding: 20px;
+  text-align: justify;
+}
+
+.text p {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+  margin: 0;
+}
+
+@media screen and (max-width: 767px) {
+  .project-div {
+    width: 100%;
+  }
 }

@@ -655,3 +655,23 @@ nav ul {
   color: #222 !important;
   font-weight: 600 !important;
 }
+
+/* footer last text */
+
+.footer-text--info {
+  padding-bottom: 6.4rem;
+  font-size: 1.2rem;
+  background-color: #fafafa;
+}
+
+.footer-last-text {
+  text-align: center;
+  max-width: 112rem;
+  margin: auto;
+  color: #bbb;
+}
+
+.footer-last-text p {
+  line-height: 1.8rem;
+  letter-spacing: 0.1px;
+}

@@ -76,6 +76,11 @@ iletisimKapatma.addEventListener("click", function () {
   iletisim_icon.setAttribute("name", "chatbox-outline");
   iletisim_div.classList.add("display-none");
 });
+
+const iletisimNav = document.querySelector(".color-for-nav-links-iletisim");
+iletisimNav.addEventListener("click", function () {
+  iletisim_div.classList.toggle("display-none");
+});
 //////////////////////////////////////////////////////
 
 //URUNLER HOVER
@@ -89,3 +94,5 @@ hoveredElement.addEventListener("mouseover", function () {
 hoveredElement.addEventListener("mouseout", function () {
   urunlerNav.classList.add("display-none");
 });
+
+//////////////////////////////////////////////////
