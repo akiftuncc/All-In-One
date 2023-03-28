@@ -50,9 +50,6 @@ const obs = new IntersectionObserver(
 obs.observe(sectionHeroEl);
 /////////////////////////////////////////////////
 
-const urunler = document.querySelector(".urunler-link");
-
-urunler.addEventListener("mouseenter", () => {});
 //////////////////////////////////////////////////
 
 //  icon
