@@ -1,0 +1,34 @@
+.yatay {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 15px;
+  margin-top: 15px;
+}
+.red {
+  padding: 15px 5px;
+  color: #fff;
+  background-color: red;
+}
+.blue {
+  padding: 15px 5px;
+  color: #fff;
+  background-color: blue;
+}
+.yellow {
+  padding: 15px 5px;
+  color: #fff;
+  background-color: rgb(172, 172, 16);
+}
+
+button {
+  font-size: 2rem;
+}
+section {
+  margin: auto;
+  max-width: 500px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
