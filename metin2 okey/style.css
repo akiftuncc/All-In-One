@@ -21,7 +21,7 @@
 }
 
 button {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 section {
   margin: auto;
@@ -31,4 +31,41 @@ section {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.yatay-final {
+  display: grid;
+  gap: 15px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.red-final {
+  text-align: center;
+  padding: 0.2rem 1rem;
+  margin-top: 0.5rem;
+  background-color: red;
+  color: white;
+  font-size: 1.6rem;
+}
+
+.blue-final {
+  text-align: center;
+  padding: 0.2rem 1rem;
+  margin-top: 0.5rem;
+  background-color: blue;
+  color: white;
+  font-size: 1.6rem;
+}
+.yellow-final {
+  text-align: center;
+  padding: 0.2rem 1rem;
+  margin-top: 0.5rem;
+  background-color: rgb(172, 172, 16);
+  color: white;
+  font-size: 1.6rem;
+}
+
+.container {
+  width: 250px;
+  margin: auto;
 }
