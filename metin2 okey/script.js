@@ -24,6 +24,7 @@ blue_.forEach((element) => {
       }
     });
   });
+  y;
 });
 
 yellow_.forEach((element) => {
